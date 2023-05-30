@@ -1,13 +1,16 @@
 import './App.scss';
+import Header from './components/UI/Header/Header'
+import TodoList from './components/TodoList/TodoList';
+import NewTodoItem from './components/NewTodoItem/NewTodoItem';
+import TodoListFilter from './components/TodoListFilter/TodoListFilter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          React TODO list
-        </p>
-      </header>
+      <Header />
+      <NewTodoItem />
+      <TodoList />
+      <TodoListFilter/>
     </div>
   );
 }
