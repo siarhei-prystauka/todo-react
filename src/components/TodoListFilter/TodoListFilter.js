@@ -1,11 +1,17 @@
-function TodoListFilter() {
+import './todo-filter.scss';
+
+const TodoListFilter = () => {
     return (
-        <div>
-            <span>5 items left</span>
-            <button type="">All</button>
-            <button type="">Active</button>
-            <button type="">Completed</button>
-            <button type="">Clear Completed</button>
+        <div className="todos-filter">
+            <span className="todos-count">5 items left</span>
+            <nav>
+                <a href="#" className="filter-link selected">All</a>
+                <a href="#" className="filter-link">Active</a>
+                <a href="#" className="filter-link">Completed</a>
+            </nav>
+            <nav>
+                <a href="#" className="filter-link">Clear Completed</a>
+            </nav>
         </div>
     );
 }

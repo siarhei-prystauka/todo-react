@@ -1,16 +1,17 @@
-import './App.scss';
+import './app.scss';
+
 import Header from './components/UI/Header/Header'
 import TodoList from './components/TodoList/TodoList';
-import NewTodoItem from './components/NewTodoItem/NewTodoItem';
+import NewTodoItem from './components/NewTodoItem/NewTodoForm';
 import TodoListFilter from './components/TodoListFilter/TodoListFilter';
 
 function App() {
   return (
-    <div className="App">
+    <div className="todo-app">
       <Header />
       <NewTodoItem />
       <TodoList />
-      <TodoListFilter/>
+      <TodoListFilter />
     </div>
   );
 }
